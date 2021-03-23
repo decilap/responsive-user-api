@@ -1,0 +1,12 @@
+{
+  "name": "api-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --server --files='css/*.css, js/*.js, *.html'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

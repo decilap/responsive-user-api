@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.users{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.users h2{
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.users_card{
+    position: relative;
+    padding: 10px;
+    padding-top: 20px;
+    min-width: 33%;
+}
+
+
+.users .users_info{
+    margin-top: 40px;
+    background-color: #F1F0FD;
+    height: 180px;
+    border-radius: 15px 2px 2px 2px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.users .users_info i{
+    color: #5DB6F4;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.users .users_info h3{
+    margin: 0;
+    font-weight: 400;
+}
+
+.users .users_info p{
+    margin: 0 0 10px 0;
+    font-weight: 300;
+}
+
+.avatar{
+    position: absolute;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+.users_card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 20px;
+    left: 9px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.users img:hover{
+    transform: scale(1.2);
+}
+
+.users .users_cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.users .fa-spin{
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    left: 47%;
+}
+
+.hide{
+    display: none !important;
+}
+
+@media screen and (max-width: 500px){
+    .users_card{
+        min-width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px){
+    .users_card{
+        min-width: 50%;
+    }
+}
