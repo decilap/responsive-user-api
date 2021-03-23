@@ -10,11 +10,61 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 800px;
+    position: relative;
+    min-width: 220px;
 }
 
-.users{
+.geeks{
+    height: 135px;
+    position: relative;
     width: 100%;
+}
+
+
+.wrapper { 
+    position: relative;
+    width: 100%; 
+    height: 100vh; 
+    position: relative; 
+} 
+
+.geeks::before { 
+    content: ""; 
+    width: 50%; 
+    height: 200px;  
+    position: absolute; 
+    top: -70px;
+    left: 0; 
+    background: #5DB6F4;;
+    transform: skewY(8deg); 
+} 
+
+h1{
+    margin: 0;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+
+.geeks::after { 
+    content: ""; 
+    width: 50%; 
+    height: 200px; 
+    position: absolute; 
+    top: -70px; 
+    right: 0; 
+    background: #5DB6F4;
+    transform: skewY(-8deg); 
+}
+
+
+/*  USER */
+.users{
     max-width: 800px;
     margin: 0 auto;
     margin-top: 100px;
@@ -80,7 +130,7 @@ body{
     top: 20px;
     left: 9px;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-out;
 }
 
 .users img:hover{
@@ -97,7 +147,7 @@ body{
     position: absolute;
     top: 40%;
     font-size: 40px;
-    left: 47%;
+    left: 48%;
 }
 
 .hide{
